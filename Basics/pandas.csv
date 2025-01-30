@@ -1,0 +1,19 @@
+Operation	Pandas Code
+Create DataFrame	df = pd.DataFrame(data)
+Read CSV	df = pd.read_csv('data.csv')
+First N rows	df.head(n)
+Last N rows	df.tail(n)
+Shape	df.shape
+Data Types	df.dtypes
+Select Column	df['col']
+Select Multiple Columns	df[['col1', 'col2']]
+Select Row by Index	df.iloc[n]
+Select Row by Label	df.loc[n]
+Filter Rows	df[df['col'] > value]
+Sort Data	df.sort_values('col')
+Fill NaN	df.fillna(value)
+Drop Column	df.drop(columns=['col'])
+Drop Row	df.drop(index=n)
+Group By	df.groupby('col').sum()
+Merge DataFrames	pd.merge(df1, df2, on='key')
+Export to CSV	df.to_csv('file.csv')
